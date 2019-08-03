@@ -1,0 +1,28 @@
+<a href="/"><< назад</a>
+<!-- BEGIN: table -->
+<table id="myTable" class="tablesorter">
+    <thead>
+    <tr>
+        <th>Номер</th>
+        <th>Продукт</th>
+        <th>Цена</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- BEGIN: rows -->
+    <tr id="Products">
+        <td class="id">{DATA.id}</td>
+        <td class="name">{DATA.product_name}</td>
+        <td class="price">{DATA.product_price}</td>
+        <td class="functions"><button id="deleteProduct">Удалить</button><button id="updateProduct">Обновить</button></td>
+    </tr>
+    <!-- END: rows -->
+    </tbody>
+    <tr id="newProduct">
+        <td></td>
+        <td><input id="new_product_name" type="text" name="product_name" value=""/></td>
+        <td><input id="new_product_price" type="text" name="product_price" value=""/></td>
+        <td><input id="order_id" value="{ORDER_ID}" hidden /><button id="addProduct">Добавить</button></td>
+    </tr>
+</table>
+<!-- END: table -->
